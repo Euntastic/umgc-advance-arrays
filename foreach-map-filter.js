@@ -121,7 +121,7 @@ Examples:
 */
 
 function extractKey(arr, key) {
-
+    return arr.map((element) => element[key]);
 }
 
 /*
@@ -132,7 +132,7 @@ Examples:
 */
 
 function extractFullName(arr) {
-
+    return arr.map((element) => { return `${element['first']} ${element['last']}` });
 }
 
 // ███████ ██ ██      ████████ ███████ ██████  
